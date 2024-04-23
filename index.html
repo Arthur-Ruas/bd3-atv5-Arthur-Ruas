@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul id="student-list">
+            
+        </ul>
+    </div>  
+    <div class="form">
+        <form id="student-form">
+            <div class="wrapper-inputs">
+                <div class="form__input">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome"/>
+                </div>
+                <div class="form__input">
+                    <label>CPF do Aluno</label>
+                    <input type="text" name="cpf" id="cpf"/>
+                </div>
+                <div class="form__input">
+                    <label>RG do Aluno</label>
+                    <input type="text" name="rg" id="rg"/>
+                </div>
+                <div class="form__input">
+                    <label>Email do Aluno</label>
+                    <input type="text" name="email" id="email"/>
+                </div>
+                <div class="form__input">
+                    <label>Telefone do Aluno</label>
+                    <input type="text" name="telefone_aluno" id="telefone_aluno"/>
+                </div>
+                <div class="form__input">
+                    <label>Telefone do Responsável</label>
+                    <input type="text" name="telefone_responsa" id="telefone_responsa"/>
+                </div>
+                <div class="form__input">
+                    <label>Data de Nascimento do ALuno</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento"/>
+                </div>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCCXstFGn4YSnMNUwTl3QQB0CPK0ykob48",
+            authDomain: "bd3-nosql-9f0c5.firebaseapp.com",
+            projectId: "bd3-nosql-9f0c5",
+            storageBucket: "bd3-nosql-9f0c5.appspot.com",
+            messagingSenderId: "54985147146",
+            appId: "1:54985147146:web:4fe1035fc74796a37570f3",
+            measurementId: "G-8H0VQKR3QR"
+          };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

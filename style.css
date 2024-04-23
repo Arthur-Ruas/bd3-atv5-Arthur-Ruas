@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: .3s;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+#student-list > li{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+}
