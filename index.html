@@ -11,11 +11,15 @@
 </head>
 <body>
     <div class="container">
+        <header class="header">
+            <button id="buttonShow">Criar</button>
+        </header>
         <ul id="student-list">
             
         </ul>
     </div>  
-    <div class="form">
+    <div class="form" id="form">
+        <button id="buttonClose">Fechar</button>
         <form id="student-form">
             <div class="wrapper-inputs">
                 <div class="form__input">
@@ -67,5 +71,6 @@
         const db = firebase.firestore();
     </script>
     <script src="app.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

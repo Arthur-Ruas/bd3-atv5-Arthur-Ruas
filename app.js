@@ -57,28 +57,28 @@ db.collection('bd3-nosql-atv5')
     }
 )
 
-const form = document.getElementById('student-form')
+const studentstudentForm = document.getElementById('student-form')
 
-form.addEventListener('submit', (event) =>{
+studentForm.addEventListener('submit', (event) =>{
     event.preventDefault();
 
     db.collection('bd3-nosql-atv5').add({
-        nome: form.nome.value,
-        cpf: form.cpf.value,
-        rg: form.rg.value,
-        email: form.email.value,
-        telefone_aluno: form.telefone_aluno.value,
-        telefone_responsa: form.telefone_responsa.value,
-        data_nascimento: form.data_nascimento.value
+        nome: studentForm.nome.value,
+        cpf: studentForm.cpf.value,
+        rg: studentForm.rg.value,
+        email: studentForm.email.value,
+        telefone_aluno: studentForm.telefone_aluno.value,
+        telefone_responsa: studentForm.telefone_responsa.value,
+        data_nascimento: studentForm.data_nascimento.value
 
     }).then(() =>{
-        form.nome.value = '';
-        form.cpf.value = '';
-        form.rg.value = '';
-        form.email.value = '';
-        form.telefone_aluno.value = '';
-        form.telefone_responsa.value = '';
-        form.data_nascimento.value = '';
+        studentForm.nome.value = '';
+        studentForm.cpf.value = '';
+        studentForm.rg.value = '';
+        studentForm.email.value = '';
+        studentForm.telefone_aluno.value = '';
+        studentForm.telefone_responsa.value = '';
+        studentForm.data_nascimento.value = '';
 
         window.location.reload();
     })
